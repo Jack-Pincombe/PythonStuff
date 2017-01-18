@@ -46,8 +46,6 @@ def getMove():
         else:
             print "That is an invalid position"
 
-
-
 def wipeBoard():
     global board
     for square in range( 0,len(board) ):
