@@ -24,21 +24,20 @@ def swapPlayer(player):
         player = 'O'
     else:
         player = 'X'
-
     return player
 
-def getMove():
+def getMove(player):
     global board
     correct_number = False
     while correct_number == False:
-        square = raw_input('Square to place the '+ player +' ')
+        square = raw_input('Square to player ' + player + ' ')
         try:
             square = int(square)
         except:
             square = -2
         square -= 1 # making the input match the internal numbers
         if square >= 0 and square < 10:
-            if board[square] == '':
+            if board[square] == ' ':
                 board[square] = player
                 correct_number = True
             else:
@@ -67,7 +66,7 @@ def canMove():
     move = False
     for square in range(0,len(board)):
         if board[square] == ' ':
-            move == True
+            move = True
         return move
 
 def checkWin(player):
