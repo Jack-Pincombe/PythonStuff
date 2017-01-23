@@ -10,4 +10,4 @@ k = list[med - 1]
 total = (med + k ) // 2
 
 print(total)
-
+print(sorted)
