@@ -44,7 +44,7 @@ def testSortPerformance(sortFunction, noOfSamples):
     print('Testing sorting performance at different sample sizes')
     print()
     
-    sampleSize = 200
+    sampleSize = 4000
     for sample in range(noOfSamples):
 
         # Create an unsorted list of random integers 
@@ -60,7 +60,7 @@ def testSortPerformance(sortFunction, noOfSamples):
 # Bear in mind that for more than a few samples,
 # the running time required could be substantial,
 # so it is best to start with a small number of samples and see how it goes.
-noOfSamples = 2
+noOfSamples = 5
 testSortPerformance(linearInsertionSort, noOfSamples)
 
 
@@ -72,6 +72,33 @@ testSortPerformance(linearInsertionSort, noOfSamples)
 # You may find it helpful to consult the M&R textbook 
 # and the iterativeBinarySearch function provided further below
 def recursiveBinarySearch(aList, first, last, target):
+    assert 0 < first < len(aList)
+    aList = sort(aList)
+    pos = aList[midpoint]
+    midpoint = aList // 2
+
+
+
+    if len(aList) == 0:
+        return false
+    elif target > last:
+        return last
+
+    else:
+        if aList[midpoint] == target:
+            return pos
+        else:
+            if aList[midpoint] < target:
+                recursiveBinarySearch(aList[:midpoint],first, last, target)
+            else:
+                recursiveBinarySearch(aList[midpoint+1:],first, last,target)
+
+
+
+
+
+
+
     '''
     Preconditions: aList is in ascending order
                    0 <= first < len(aList); last < len(aList)
@@ -133,7 +160,7 @@ def testBinarySearch(search):
 # Run tests on your function recursiveBinarySearch
 print()
 print('Testing recursive binary search')
-testBinarySearch(recursiveBinarySearch)
+#testBinarySearch(recursiveBinarySearch)
 
 
 # Question 1 (c)
@@ -178,5 +205,5 @@ def binaryInsertionSort(aList):
           'seconds')
 
 # Test with the same number of samples 
-testSortPerformance(binaryInsertionSort, noOfSamples)
+#testSortPerformance(binaryInsertionSort, noOfSamples)
 
