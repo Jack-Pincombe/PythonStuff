@@ -44,7 +44,7 @@ def testSortPerformance(sortFunction, noOfSamples):
     print('Testing sorting performance at different sample sizes')
     print()
     
-    sampleSize = 4000
+    sampleSize = 10
     for sample in range(noOfSamples):
 
         # Create an unsorted list of random integers 
@@ -61,7 +61,7 @@ def testSortPerformance(sortFunction, noOfSamples):
 # the running time required could be substantial,
 # so it is best to start with a small number of samples and see how it goes.
 noOfSamples = 5
-testSortPerformance(linearInsertionSort, noOfSamples)
+#testSortPerformance(linearInsertionSort, noOfSamples)
 
 
 # Question 1 (b)
@@ -71,27 +71,23 @@ testSortPerformance(linearInsertionSort, noOfSamples)
 # Add your code for this function
 # You may find it helpful to consult the M&R textbook 
 # and the iterativeBinarySearch function provided further below
-def recursiveBinarySearch(aList, first, last, target):
-    assert 0 < first < len(aList)
-    aList = sort(aList)
-    pos = aList[midpoint]
-    midpoint = aList // 2
+def recursiveBinarySearch(aList,  start,end,target):
+    #aList = sorted(aList)
 
-
-
-    if len(aList) == 0:
-        return false
-    elif target > last:
-        return last
-
+    if end-start+1 <= 0:
+        return False
     else:
+        midpoint = start + (end - start) // 2
         if aList[midpoint] == target:
-            return pos
+            return midpoint
         else:
-            if aList[midpoint] < target:
-                recursiveBinarySearch(aList[:midpoint],first, last, target)
+            if target < aList[midpoint]:
+                return recursiveBinarySearch(aList, start, midpoint-1,target)
             else:
-                recursiveBinarySearch(aList[midpoint+1:],first, last,target)
+                return recursiveBinarySearch(aList, midpoint+1, end,target)
+
+
+
 
 
 
@@ -160,7 +156,7 @@ def testBinarySearch(search):
 # Run tests on your function recursiveBinarySearch
 print()
 print('Testing recursive binary search')
-#testBinarySearch(recursiveBinarySearch)
+testBinarySearch(recursiveBinarySearch)
 
 
 # Question 1 (c)
