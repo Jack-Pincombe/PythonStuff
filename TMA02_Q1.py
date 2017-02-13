@@ -71,22 +71,22 @@ noOfSamples = 5
 # Add your code for this function
 # You may find it helpful to consult the M&R textbook 
 # and the iterativeBinarySearch function provided further below
-def recursiveBinarySearch(aList,  start,end,target):
+def recursiveBinarySearch(aList,  first,last,target):
     #aList = sorted(aList)
 
-    if end-start+1 <= 0:
-        return False
+    if last-first+1 <= 0:
+        return last + 1
+
     else:
-        midpoint = start + (end - start) // 2
+        midpoint = first + (last - first) // 2
         if aList[midpoint] == target:
             return midpoint
+
         else:
             if target < aList[midpoint]:
-                return recursiveBinarySearch(aList, start, midpoint-1,target)
+                return recursiveBinarySearch(aList, first, midpoint-1,target)
             else:
-                return recursiveBinarySearch(aList, midpoint+1, end,target)
-
-
+                return recursiveBinarySearch(aList, midpoint+1, last,target)
 
 
 
