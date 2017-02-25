@@ -21,11 +21,14 @@ def linearInsertionSort(aList):
     '''
     start = time.time()
     for currentPosition in range(1, len(aList)):
+
         currentValue = aList[currentPosition]
         position = currentPosition
+
         while position > 0 and aList[position - 1] > currentValue:
             aList[position] = aList[position - 1]
             position = position - 1
+
         aList[position] = currentValue
     elapsed = time.time() - start
     print('linearInsertionSort:', len(aList), 'items =', "%.4f" % elapsed,
@@ -44,7 +47,7 @@ def testSortPerformance(sortFunction, noOfSamples):
     print('Testing sorting performance at different sample sizes')
     print()
     
-    sampleSize = 10
+    sampleSize = 1000
     for sample in range(noOfSamples):
 
         # Create an unsorted list of random integers 
@@ -61,7 +64,7 @@ def testSortPerformance(sortFunction, noOfSamples):
 # the running time required could be substantial,
 # so it is best to start with a small number of samples and see how it goes.
 noOfSamples = 5
-#testSortPerformance(linearInsertionSort, noOfSamples)
+testSortPerformance(linearInsertionSort, noOfSamples)
 
 
 # Question 1 (b)
@@ -191,11 +194,21 @@ def binaryInsertionSort(aList):
     Insertion sort (using binary search)
     '''
     start = time.time()
-    pass
+
+
+    for currentPosition in range(1, len(aList)):
+        value = aList[currentPosition]
+        j = recursiveBinarySearch(aList, 0, currentPosition - 1, value)
+        aList = aList[:j] + [value] + aList[j:currentPosition] + aList[currentPosition + 1:]
+    return aList
+
+
+
     elapsed = time.time() - start
     print('binaryInsertionSort: ', len(aList), 'items =', "%.4f" % elapsed,
           'seconds')
 
-# Test with the same number of samples 
-#testSortPerformance(binaryInsertionSort, noOfSamples)
+
+# Test with the same number of samples
+testSortPerformance(binaryInsertionSort, noOfSamples)
 
