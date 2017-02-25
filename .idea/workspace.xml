@@ -19,7 +19,7 @@
     <SUITE FILE_PATH="coverage/PythonStuff$Unittests_in_PythonStuff.coverage" NAME="Unittests in PythonStuff Coverage Results" MODIFIED="1487966607235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$ticTacToe.coverage" NAME="ticTacToe Coverage Results" MODIFIED="1484753946273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonStuff$TtT.coverage" NAME="TtT Coverage Results" MODIFIED="1487966591828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonStuff$TMA02_Q1.coverage" NAME="TMA02_Q1 Coverage Results" MODIFIED="1488039267745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonStuff$TMA02_Q1.coverage" NAME="TMA02_Q1 Coverage Results" MODIFIED="1488040940341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,7 +33,7 @@
       <file leaf-file-name="TMA02_Q1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TMA02_Q1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2019">
+            <state relative-caret-position="126">
               <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding />
             </state>
@@ -501,7 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TMA02_Q1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2019">
+        <state relative-caret-position="126">
           <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding />
         </state>
