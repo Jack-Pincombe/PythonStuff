@@ -195,18 +195,13 @@ def binaryInsertionSort(aList):
     '''
     start = time.time()
 
-
-
-    for currentPosition in xrange(1, len(aList)):
+    for currentPosition in range(1, len(aList)):
         value = aList[currentPosition]
         j = recursiveBinarySearch(aList, 0, currentPosition - 1, value)
         aList = aList[:j] + [value] + aList[j:currentPosition] + aList[currentPosition + 1:]
 
-
-
-
     elapsed = time.time() - start
-    print('binaryInsertionSort: ', len(aList), 'items =', "%.4f" % elapsed,
+    print("binaryInsertionSort: ", len(aList), 'items =', "%.4f" % elapsed,
           'seconds')
 
 
