@@ -1,5 +1,3 @@
-
-
 def fibonacci(n):
     numToPrint = 0
     nextNum = 1
@@ -7,7 +5,6 @@ def fibonacci(n):
     for i in range(n):
         numToPrint += nextNum
         nextNum = numToPrint - nextNum
-
         print(numToPrint)
 
-print(2 + 3 + - 10 )
+fibonacci(10)
