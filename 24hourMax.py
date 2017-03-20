@@ -45,7 +45,7 @@ def solution(A,B,C,D):
                 y = int(str(total[j]))
 
     if tmpHour == 0:
-        return "wont work"
+        return "This will not work"
 
 
     total.remove(x)
@@ -58,6 +58,8 @@ def solution(A,B,C,D):
 
     if tmpMinute == 0:
         tmpMinute = "00"
+    elif tmpMinute > 59:
+        return "This will not work"
 
 
 
