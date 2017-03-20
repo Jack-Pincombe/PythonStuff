@@ -1,24 +1,4 @@
 
-a = [1,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,1,0]
-
-
-def solution(A):
-    # write your code in Python 2.7
-    heads = 0
-    tails = 0
-    for i in range(len(A)):
-        if A[i] == 0:
-            heads += 1
-        else:
-            tails += 1
-
-    if heads < tails:
-        return heads
-    elif tails < heads:
-        return tails
-    else:
-        return 0
-
 
 def solution(A,B,C,D):
     #return as a string
@@ -39,14 +19,16 @@ def solution(A,B,C,D):
 
     for i in range(len(total)):
         for j in range(len(total)):
-            if int(str(total[i]) + str(total[j])) < max_hour and int(str(total[i]) + str(total[j])) > tmpHour and i != j:
+            if total[i] > 9 or total[j] > 9:
+                return "This will not work"
+
+            elif int(str(total[i]) + str(total[j])) < max_hour and int(str(total[i]) + str(total[j])) > tmpHour and i != j:
                 tmpHour = int(str(total[i]) + str(total[j]))
                 x = int(str(total[i]))
                 y = int(str(total[j]))
 
     if tmpHour == 0:
         return "This will not work"
-
 
     total.remove(x)
     total.remove(y)
@@ -61,14 +43,12 @@ def solution(A,B,C,D):
     elif tmpMinute > 59:
         return "This will not work"
 
-
-
-    time = str(tmpHour)
-    return(time + ':'+ str(tmpMinute))
+    return(str(tmpHour) + ':'+ str(tmpMinute))
 
 
 print(solution(5,2,4,3))
 print(solution(9,9,9,9))
 print(solution(2,3,0,0))
+print(solution(1,34,5,4))
 
 
