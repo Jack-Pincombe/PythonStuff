@@ -5,6 +5,6 @@ def fibonacci(n):
     for i in range(n):
         numToPrint += nextNum
         nextNum = numToPrint - nextNum
-        print(numToPrint)
+    print(numToPrint)
 
-fibonacci(10)
+fibonacci(100)
