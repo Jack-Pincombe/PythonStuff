@@ -31,7 +31,7 @@ def fibonacci(x):
     total = 0
 
     for i in range(1,x):
-        print i
+        print(i)
 
 
 
@@ -44,7 +44,7 @@ def question1():
     for i in range(2000,3200):
         if i % 7 == 0 and i % 5 != 0:
             values.append(i)
-    print values
+    print(values)
 
 question1()
 
@@ -62,7 +62,7 @@ def question3(num):
     for i in range(1, num + 1):
         print(str(i) +": " + str((i * i)))
 question3(7.3)
-
+r
 def question4():
     y = []
     x = ""
@@ -89,11 +89,11 @@ class Tester:
     def getname(self):
         print self.s.upper()
 
+#method to return last 3 chars in a String
+def slicing(name):
 
-jack = Tester()
-jack.addName()
-jack.getname()
-jack.addName()
-jack.getname()
+    return name
+
+print(slicing(jack))
 
 

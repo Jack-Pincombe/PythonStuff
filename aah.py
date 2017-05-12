@@ -1,13 +1,13 @@
 import sys
 
-for i in sys.stdin:
-    ab = i.split()
-    a = str(a[0])
-    b = str(a[1])
+#method to return last 3 chars in a String
+def slicing(name):
 
-if len(a) > len(b):
-    res = 'go'
-else:
-    res = 'no'
+    x = len(name)
+    x -= 3
 
-print(res)
+    print(name[x::])
+
+
+
+slicing("Jack")
