@@ -13,9 +13,9 @@ array = createArray(1000000)
 def quickSort(array):
 
     #array = createArray(1000)
-    less = []
-    equal = []
-    greater = []
+    less = [ ]
+    equal = [ ]
+    greater = [ ]
     if len(array) > 1:
         pivot = array[0]
         for i in array:
