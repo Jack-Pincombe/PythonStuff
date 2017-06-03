@@ -8,6 +8,7 @@ def createArray(x):
         array.append(random.randrange(0,x))
     return array
 
+
 array = createArray(1000000)
 
 def quickSort(array):
@@ -31,6 +32,6 @@ def quickSort(array):
 
 if __name__ == '__main__':
     start = time.time()
-    print quickSort(array)
+    print(quickSort(array))
     stime = time.time() - start
     print("Time taken = ", "%.4f " % stime , "seconds")
