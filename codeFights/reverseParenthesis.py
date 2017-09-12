@@ -10,28 +10,24 @@ word = "ab(c(fed)gh)i"
 
 
 def reverseParentheses(s):
-    word = list(s)
-    y = 0
-    z = 0
+    x = list(s)
 
-    for i in range(len(word)):
+    count = 0
+    cleft = 0
 
-        if word[i] == '(':
+    for i in x:
+        if i == '(' or i == ')':
+            count+=1
 
-            y = i
+    left = count // 2
 
-        elif word[i] == ')':
+    for i in x:
+        if i == '(':
+            cleft += 1
 
-            z = i
 
-    rev = word[y + 1: z]
-    word[y:z + 1] = rev[::-1]
-    print word
-    if '(' in word:
-        return reverseParentheses(word)
-    return word
-
-    #return (''.join(word))
+    print(count)
+    print(left)
 
 
 
