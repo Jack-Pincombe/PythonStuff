@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Python.iml" filepath="$PROJECT_DIR$/.idea/Python.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sideprojects/gui/.idea/gui.iml" filepath="$PROJECT_DIR$/../sideprojects/gui/.idea/gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sideprojects/lyndaGui/.idea/lyndaGui.iml" filepath="$PROJECT_DIR$/../sideprojects/lyndaGui/.idea/lyndaGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../penTest/.idea/penTest.iml" filepath="$PROJECT_DIR$/../penTest/.idea/penTest.iml" />
     </modules>
   </component>
 </project>
