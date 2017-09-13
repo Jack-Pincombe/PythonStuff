@@ -7,17 +7,16 @@ example2 = [1,2,1]
 example3 = [1,2,1,2]
 
 def almostIncreasingSequence(sequence):
-    count = 0
+    x = sequence
 
-    for i in range( len(sequence) - 1 ):
+    return almostIncreasingSequence(x,0)
 
-        if sequence[i] > sequence[i + 1]:
-            count += 1
+def almo(array, y):
 
-        if count > 1:
-            return False
+    count = y
 
-    return True
+
+
 
 print(almostIncreasingSequence(example1))
 print(almostIncreasingSequence(example2))
