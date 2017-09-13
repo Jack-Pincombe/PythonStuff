@@ -16,13 +16,13 @@ Beer = {
 Dairy = {
     "Milk": 1,
     "Butter" : 0.50,
-    "Creame": 1,
-},
+    "Creame": 1
+}
 
 Veg = {
     "Carrots": 0.25,
     "Potato": 1,
-    "Turnup": 0.5
+    "Turnup": 0.50
 }
 Basket = { }
 
@@ -36,20 +36,27 @@ def printMenu(x):
         num += 1
     print(len(x) + 1 , '-> Go Back')
 
+
+
 # function to allow the user to add items to basket
 def options(x):
     chosen = ''
 
     while ( chosen != "quit" or chosen != 'back'):
-        chosen = input('->')
+        chosen = input('')
         if chosen == "1":
-            Basket.append(x[0])
-            print(Basket1)
+            #Basket[x]= x[0]
+            print(x[int(chosen) - 1])
+            print(Basket)
 
+        elif chosen == '4':
+            mainMenu()
 
-def mainMenu():
+def greeting():
     print("Welcome to ASDA mothafucka!! ")
     time.sleep(1)
+
+def mainMenu():
     print("Which area would you like to view")
 
     for i in range(len(areas)):
@@ -91,6 +98,8 @@ def checkout(bask):
     pass
 
 def __main__():
+    greeting()
+
     mainMenu()
 
 __main__()
