@@ -65,7 +65,7 @@ def mainMenu():
     print("Enter the corresponding number")
     option = input("......")
 
-    if int(option) > 3:
+    if int(option) > 3 or int(option) < 1:
         print("Please enter a valid number")
         mainMenu()
 
@@ -81,18 +81,7 @@ def mainMenu():
     elif int(option) == 3:
 
         printMenu(Veg)
-        options(Veg)
-
-
-
-
-
-
-
-
-
-
-
+        options(Veg) 
 
 def checkout(bask):
     pass
