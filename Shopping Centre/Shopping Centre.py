@@ -23,6 +23,10 @@ basket = [
 
 ]
 
+def space(x):
+    for i in range(x):
+        print("\n")
+
 def intro():
     print("Hello and welcome to the store")
 
@@ -30,18 +34,27 @@ def whichAisle():
     print("-----------------------------------------------------------\n"
           "-----------------------------------------------------------\n"
           "-----------------------------------------------------------\n")
-    print("1 -> Beer")
-    print("2 -> Dairy")
-    print("3 -> Veg")
-    print("4 -> Checkout")
-    print("5 -> Leave")
+
+
+    options = [ "1 -> Beer","2 -> Dairy", "3 -> Veg","4 -> Checkout","5 -> Leave" ]
+
+    for i in options:
+        print(i)
     aisle = input("Please select an aisle ")
+
 
     if aisle == '4':
         returnBasket()
 
     elif aisle == '5':
         leave()
+
+    elif int(aisle)  > len(options) or aisle.isdigit() == False:
+        space(2)
+        print("Please enter a valid option")
+        time.sleep(2)
+        space(10)
+        whichAisle()
     else:
         printMenu(aisle)
 
@@ -56,23 +69,41 @@ def add(aisle):
 
 
     elif aisle == '1':
-        chosen = input('Add -> ')
-        if int(chosen) == len(beer) + 1:
+        try:
+            chosen = input('Add -> ')
+            val = int(chosen)
+
+        except ValueError:
+            print("That is not a valid option")
+
+        if int(chosen) > len(beer) + 1 or int(chosen) < 0:
+            print("Please select a valid option 1")
+            time.sleep(2)
             whichAisle()
+        space(2)
+        print("Item has been added")
         basket.append(beer[int(chosen) - 1])
         return whichAisle()
 
     elif aisle == '2':
         chosen = input('Add -> ')
-        if int(chosen) == len(aisle) + 1:
+        if int(chosen) > len(dairy) + 1 or int(chosen) < 0:
+            print("Please select a valid option 2")
+            time.sleep(2)
             whichAisle()
+        space(2)
+        print("Item has been added")
         basket.append(dairy[int(chosen) - 1])
         return whichAisle()
 
     elif aisle == '3':
         chosen = input('Add -> ')
-        if int(chosen) == len(veg) + 1:
+        if int(chosen) > len(veg) + 1 or int(chosen) < 0:
+            print("Please select a valid option 3")
+            time.sleep(2)
             whichAisle()
+        space(2)
+        print( "Item has been added")
         basket.append(veg[int(chosen) - 1])
         return whichAisle()
 
@@ -112,7 +143,6 @@ def printMenu(aisle):
             print(i + 1 , ' -> ',veg[i])
         print(len(veg) + 1, ' -> Go back')
         add("3")
-
 
 
 def __main__():
