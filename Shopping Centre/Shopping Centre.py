@@ -49,7 +49,7 @@ def whichAisle():
     elif aisle == '5':
         leave()
 
-    elif int(aisle)  > len(options) or aisle.isdigit() == False:
+    elif aisle.isnumeric() == False or int(aisle)  > len(options) :
         space(2)
         print("Please enter a valid option")
         time.sleep(2)
@@ -77,7 +77,7 @@ def add(aisle):
             print("That is not a valid option")
 
         if int(chosen) > len(beer) + 1 or int(chosen) < 0:
-            print("Please select a valid option 1")
+            print("Please select a valid option")
             time.sleep(2)
             whichAisle()
         space(2)
@@ -88,7 +88,7 @@ def add(aisle):
     elif aisle == '2':
         chosen = input('Add -> ')
         if int(chosen) > len(dairy) + 1 or int(chosen) < 0:
-            print("Please select a valid option 2")
+            print("Please select a valid option")
             time.sleep(2)
             whichAisle()
         space(2)
@@ -99,7 +99,7 @@ def add(aisle):
     elif aisle == '3':
         chosen = input('Add -> ')
         if int(chosen) > len(veg) + 1 or int(chosen) < 0:
-            print("Please select a valid option 3")
+            print("Please select a valid option")
             time.sleep(2)
             whichAisle()
         space(2)
