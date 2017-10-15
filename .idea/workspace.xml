@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="963d1f67-58dd-4c51-9743-a6e90cf9ad95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Python.iml" afterPath="$PROJECT_DIR$/.idea/Python.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -44,7 +43,8 @@
     <SUITE FILE_PATH="coverage/PythonStuff$kint.coverage" NAME="kint Coverage Results" MODIFIED="1488145606985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../sideprojects/gui" />
     <SUITE FILE_PATH="coverage/PythonStuff$TMA02_Q2_Set_list.coverage" NAME="TMA02_Q2_Set_list Coverage Results" MODIFIED="1488456852796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/PythonStuff$TMA02_Q2_Set_hash__1_.coverage" NAME="TMA02_Q2_Set_hash (1) Coverage Results" MODIFIED="1488827958016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TMA03" />
-    <SUITE FILE_PATH="coverage/PythonStuff$PushUp.coverage" NAME="PushUp Coverage Results" MODIFIED="1505826831555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../PushUp" />
+    <SUITE FILE_PATH="coverage/PythonStuff$PushUp__1_.coverage" NAME="PushUp (1) Coverage Results" MODIFIED="1505917034813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../asfda" />
+    <SUITE FILE_PATH="coverage/PythonStuff$PushUp.coverage" NAME="PushUp Coverage Results" MODIFIED="1505906307169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../PushUp" />
     <SUITE FILE_PATH="coverage/PythonStuff$equib.coverage" NAME="equib Coverage Results" MODIFIED="1490026463668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/PythonStuff$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1489763480654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonStuff$Python_activity_5_3.coverage" NAME="Python_activity_5.3 Coverage Results" MODIFIED="1489768885946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/M269_Python_files/M269_Unit_5/Python_activity_5.3" />
@@ -74,13 +74,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="PushUp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../PushUp/PushUp.py">
+        <entry file="file://$PROJECT_DIR$/../../asfda/PushUp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="9" column="0" selection-start-line="21" selection-start-column="15" selection-end-line="29" selection-end-column="17" />
-              <folding>
-                <element signature="e#302#313#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="518">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,6 +134,7 @@
         <option value="$PROJECT_DIR$/../../Push_Up_Challenge/Push_up_challenge.py" />
         <option value="$PROJECT_DIR$/../../Push_Up_Challenge/quickstart.py" />
         <option value="$PROJECT_DIR$/../../PushUp/PushUp.py" />
+        <option value="$PROJECT_DIR$/../../asfda/PushUp.py" />
       </list>
     </option>
   </component>
@@ -146,7 +145,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
+    <option name="x" value="690" />
+    <option name="width" value="750" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -197,25 +197,7 @@
       <recent name="$PROJECT_DIR$/TMA03" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PushUp">
-    <configuration default="false" name="alInc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codeFights" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFights/alInc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.PushUp (1)">
     <configuration default="false" name="Shopping Centre" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -284,6 +266,24 @@
       <module name="Desktop" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../PushUp/PushUp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PushUp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../asfda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Desktop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../asfda/PushUp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -497,19 +497,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.alInc" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Shopping Centre" />
-      <item index="2" class="java.lang.String" itemvalue="Python.bincount" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Push_up_challenge" />
-      <item index="4" class="java.lang.String" itemvalue="Python.PushUp" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Shopping Centre" />
+      <item index="1" class="java.lang.String" itemvalue="Python.bincount" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Push_up_challenge" />
+      <item index="3" class="java.lang.String" itemvalue="Python.PushUp" />
+      <item index="4" class="java.lang.String" itemvalue="Python.PushUp (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.PushUp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Push_up_challenge" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Shopping Centre" />
-        <item index="3" class="java.lang.String" itemvalue="Python.bincount" />
-        <item index="4" class="java.lang.String" itemvalue="Python.alInc" />
+        <item index="0" class="java.lang.String" itemvalue="Python.PushUp (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.PushUp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Push_up_challenge" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Shopping Centre" />
+        <item index="4" class="java.lang.String" itemvalue="Python.bincount" />
       </list>
     </recent_temporary>
   </component>
@@ -547,16 +547,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="690" y="0" width="750" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34978542" sideWeight="0.4874372" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27831325" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42289156" sideWeight="0.50831026" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42289156" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4120482" sideWeight="0.49168974" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21177685" sideWeight="0.5125628" order="2" side_tool="true" content_ui="tabs" />
@@ -592,13 +592,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TMA03/TMA02_Q2_Set_hash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/binaryGap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -838,29 +831,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Push_Up_Challenge/quickstart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Push_Up_Challenge/Push_up_challenge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Push_Up_Challenge/quickstart.py" />
+    <entry file="file://$PROJECT_DIR$/../../Push_Up_Challenge/Push_up_challenge.py" />
     <entry file="file://$PROJECT_DIR$/../../PushUp/PushUp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="9" column="0" selection-start-line="21" selection-start-column="15" selection-end-line="29" selection-end-column="17" />
-          <folding>
-            <element signature="e#302#313#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-170">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../asfda/PushUp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
