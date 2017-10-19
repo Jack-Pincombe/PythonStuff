@@ -27,8 +27,8 @@ dataset = pandas.read_csv(url,names=names)
 
 print(dataset.shape)
 print(dataset.head(20))
-#print(dataset.describe())
-#print(dataset.groupby("class").size())
+print(dataset.describe())
+print(dataset.groupby("class").size())
 
 #Displaying the dataset in various formats
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
@@ -66,3 +66,18 @@ for name, model in models:
     names.append(name)
     msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
     print(msg)
+
+#Comparing the Algorithms
+fig = plt.figure()
+fig.suptitle("Algorithm Comparison")
+ax = fig.add_subplot(111)
+plt.boxplot(results)
+ax.set_xticklabels(names)
+plt.show()
+
+knn = KNeighborsClassifier()
+knn.fit(X_train, Y_train)
+predictions = knn.predict(X_validation)
+print(accuracy_score(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
