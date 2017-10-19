@@ -35,7 +35,7 @@ dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False
 dataset.hist()
 scatter_matrix(dataset)
 
-#plt.show()
+plt.show()
 
 array = dataset.values
 X = array[:,0:4]
