@@ -8,8 +8,20 @@ Using a try statement to ensure that if the script runs into any issues
 the script will not crash but it will continue and will only throw an exception
 '''
 
+
+
+
+
+
+def getTitle(url):
+    try:
+        html = urlopen("www.google.com")
+    except HTTPError as e:
+        return None
+    try
+
 try:
-    html = urlopen("http://www.jackpincombe.online")
+    html =
     bsObj = BeautifulSoup(html.read())
     print(bsObj.h1)
 except HTTPError as e:
