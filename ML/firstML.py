@@ -70,7 +70,7 @@ for name, model in models:
 #Comparing the Algorithms
 fig = plt.figure()
 fig.suptitle("Algorithm Comparison")
-ax = fig.add_subplot(111)
+ax = fig.add_subplot(111)x
 plt.boxplot(results)
 ax.set_xticklabels(names)
 plt.show()
