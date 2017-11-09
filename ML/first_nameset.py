@@ -13,4 +13,4 @@ data = {
 
 data_pandas = pd.DataFrame(data)
 
-display(data_pandas)    
+display(data_pandas)
